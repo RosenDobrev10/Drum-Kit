@@ -3,7 +3,7 @@ buttons.forEach((button) =>
     button.addEventListener("click", function () {
         let buttonTextContent = this.textContent;
         makeSound(buttonTextContent);
-        buttonAnimation(buttonTextContent)
+        buttonAnimation(buttonTextContent);
     })
 );
 
@@ -39,10 +39,10 @@ function makeSound(key) {
 }
 
 function buttonAnimation(key) {
-    const activeButton = document.querySelector(`.${key}`)
-    activeButton.classList.add('pressed')
+    const activeButton = document.querySelector(`.${key}`);
+    activeButton.classList.add("pressed");
     setTimeout(function () {
-        activeButton.classList.remove('pressed')
-    }, 200)
+        activeButton.classList.remove("pressed");
+    }, 200);
 }
 
